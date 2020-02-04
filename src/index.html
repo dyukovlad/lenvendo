@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Lenvendo</title>
+  </head>
+  <body>
+    <div class="container">
+      <!-- Шапка / Поиск -->
+      <header class="header mb-5">
+        <h1 class="mb-3">List products</h1>
+
+        <form class="search">
+          <input type="text" class="form-control" placeholder="Search..." />
+        </form>
+      </header>
+
+      <div class="panels">
+        <!-- Вид -->
+        <div class="views">
+          <a class="views__link views__list active" href="#"
+            ><i class="fa fa-bars"></i> Список</a
+          >
+          <a class="views__link views__grid" href="#"
+            ><i class="fa fa-th-large"></i> Сетка</a
+          >
+          <a class="views__link views__table" href="#"
+            ><i class="fa fa-table"></i> Таблица</a
+          >
+        </div>
+
+        <!-- Сортировка -->
+
+        <div class="sorts">
+          <b>Сортировать:</b>
+          <div class="sorts__name-value">
+            <a href="#" class="sorts-link sorts--name"
+              ><i class="fas fa-sort-alpha-up"></i> По имени</a
+            >
+            /
+            <a href="#" class="sorts-link sorts--price"
+              ><i class="fas fa-sort-numeric-down"></i> По цене</a
+            >
+          </div>
+          <div class="sorts__byrange">
+            <a href="#" class="sorts-link sorts--asc"
+              ><i class="fas fa-sort-amount-up-alt"></i> По возростанию</a
+            >
+            /
+            <a href="#" class="sorts-link sorts--desc"
+              ><i class="fas fa-sort-amount-down-alt"></i> По убыванию</a
+            >
+          </div>
+        </div>
+      </div>
+
+      <!-- Результаты -->
+      <div class="results">
+        <ul class="results__list list"></ul>
+      </div>
+
+      <!-- навигация -->
+      <nav>
+        <ul class="pagination"></ul>
+      </nav>
+    </div>
+  </body>
+</html>
